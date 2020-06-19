@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Création d'une page d'ouverture de compte</title>
+    <link rel="stylesheet" href="Compte_CU.css">
+ </head>
+
+<body>
+<div class="container">
+    <h1 class="label">Inscription Client</h1>
+    <form class="login_form" action="home.html" method="POST" name="form" onsubmit="return validated()">
+        <div class="font">Prénom</div>
+        <input type="text" name="Prénom">
+        <div class="font">Nom</div>
+        <input type="text" name="Nom">
+        <div class="font">Adresse</div>
+        <input type="text" name="Adresse">
+        <div class="font">Email</div>
+        <input autocomplete="off" type="text" name="Email">
+        <div id="email_error"></div>
+        <div class="font font2">Password</div>
+        <input type="password" name="password">
+        <div id="pass_error"></div>
+        <div class="font font2">Password Confirm</div>
+        <input type="password" name="password">
+        <div id="pass_confirm"></div>
+        <button type="submit">Enregistrer</button>
+        
+</form>
+</div>
+<script src="Compte_CU.js"></script>
+</body>
+</html>
